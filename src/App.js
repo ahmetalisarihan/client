@@ -1,11 +1,12 @@
 import './App.css';
+import Room from './components/Room.jsx'
+import Chat from './components/Chat';
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
+      <Room/>
+      {/* <Chat/> */}
     </div>
   );
 }

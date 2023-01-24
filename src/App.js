@@ -17,14 +17,14 @@ function App() {
         !chatScreen ? 
         <Room
         username={username}
-        room={username}
+        room={room}
         setUsername={setUsername}
         setRoom={setRoom}
         setChatScreen={setChatScreen}
         socket={socket}
       />
       :
-      <Chat/>
+      <Chat socket={socket} username={username} room={room}/>
       }
       
       
